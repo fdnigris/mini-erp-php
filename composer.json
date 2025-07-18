@@ -1,0 +1,24 @@
+{
+    "name": "mini-erp/mini-erp",
+    "description": "Mini ERP system with product management, cart, and order processing",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "vlucas/phpdotenv": "^5.5",
+        "phpmailer/phpmailer": "^6.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\""
+        ],
+        "setup-db": [
+            "mysql -u root -p < database/migrations/orders.sql"
+        ]
+    }
+} 

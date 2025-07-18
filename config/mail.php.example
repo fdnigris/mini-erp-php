@@ -1,0 +1,13 @@
+<?php
+
+// Configurações do Gmail - não esquece de gerar a senha de app!
+define('MAIL_HOST', 'smtp.gmail.com');
+define('MAIL_PORT', 587);
+
+// Coloca aqui o email que vai enviar as mensagens
+define('MAIL_USERNAME', 'seu_email@gmail.com');
+define('MAIL_PASSWORD', 'sua_senha_de_app');
+
+// Nome e email que o cliente vai ver quando receber a mensagem
+define('MAIL_FROM_NAME', 'Mini ERP - Confirmação de Pedido');
+define('MAIL_FROM_ADDRESS', 'seu_email@gmail.com'); 

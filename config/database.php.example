@@ -1,0 +1,12 @@
+<?php
+
+// Configurações do banco - ajuste de acordo com seu ambiente
+return [
+    'host' => 'localhost',      // Endereço do banco
+    'database' => 'mini_erp',   // Nome do banco
+    'username' => 'seu_usuario', // Seu usuário
+    'password' => 'sua_senha',   // Sua senha
+    'charset' => 'utf8mb4',     // Suporte a emojis e caracteres especiais
+    'collation' => 'utf8mb4_unicode_ci',
+    'prefix' => '',             // Prefixo das tabelas (deixa vazio mesmo)
+]; 

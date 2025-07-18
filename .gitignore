@@ -1,0 +1,42 @@
+# Arquivos de configuração com dados sensíveis
+config/database.php
+config/mail.php
+
+# Dependências
+vendor/
+node_modules/
+
+# Arquivos de cache
+storage/cache/*
+!storage/cache/.gitkeep
+
+# Logs
+storage/logs/*
+!storage/logs/.gitkeep
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# IDEs e editores
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos temporários
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Arquivos de ambiente
+.env
+.env.*
+!.env.example
+
+# Arquivos de backup
+*.bak
+*.backup
+*~ 
